@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+	div{
+		width: 100px;
+		height: 100px;
+		position: relative;
+		left: 0;
+		top: 0;
+		animation: square 5s ease-out infinite;
+	}
+	@keyframes square{
+			0%{
+				left: 0;
+				background-color: red;
+			}
+			25%{
+				left: 100vw;
+				transform: translateX(-100px);
+				top: 0;
+				background-color: yellow;
+			}
+			50%{
+				left: 100vw;
+				top: 100vh;
+				transform: translate(-100px,-100px);
+				background-color:blue;
+			}
+			75%{
+				top:  100vh;
+			   transform: translateY(-100px);
+				left: 0;
+				background-color:green;
+			}
+			100%{
+				left: 0;
+				background-color: red;
+				animation-timing-function: ease;
+			}
+		}
+</style>
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>
